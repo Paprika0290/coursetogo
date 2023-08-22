@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+.sidebar {
+	font-family: 'Paytone One', sans-serif;
+}
+
+/* 로그인 및 회원가입 버튼 스타일 */
+
+.loginAndSignup {
+	position: absolute;
+    top: 10px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+}
+
+.loginbtn {
+	margin-left: 15px;
+	padding-top: 20px;
+}
+
+.container {
+    display: flex; /* 유연한 박스 모델을 사용하기 위해 flex 컨테이너로 설정 */
+    align-items: center; /* 요소들을 수직으로 가운데 정렬 */
+    justify-content: flex-end;
+    font-weight: bold;
+    color: #1245AB;
+  }
+  
+.userEmail {
+	margin-left: auto; /* 나머지 공간을 왼쪽 마진으로 설정하여 오른쪽으로 붙임 */
+}
+
+.withBackground {
+	display: inline-block;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+	padding: 10px 20px;
+	padding-left: 30px;
+	margin-right: 20px;
+	margin-left: -50px;
+    z-index: 10;
+}
+  
+.userName, .userEmail {
+	font-weight: bold;
+    color: #1245AB;
+}

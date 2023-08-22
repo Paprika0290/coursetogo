@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* 말풍선 전체 스타일 */
+.naver-infoWindow {
+  background-color: rgba(135, 206, 235, 0.7);
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+/* 말풍선 내용 스타일 */
+.naver-infoWindow-content {
+  color: #00008b;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  font-weight: bolder;
+  background: rgba(135, 206, 235, 0.7);
+}

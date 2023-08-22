@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.spring.coursetogo.mapper.RestaurantMapper">
+	
+    <select id="getRestaurantBySearchKeyword" 
+            resultType="Restaurant">
+        SELECT
+        식품인증업소일련번호 AS foodCertificationSerialNumber,
+        업소_명 AS establishmentName,
+        자치구_코드 AS districtCode,
+        자치구_명 AS districtName,
+        업태_코드 AS businessTypeCode,
+        업태_명 AS businessTypeName,
+        지도_Y좌표 AS mapYCoordinate,
+        지도_X좌표 AS mapXCoordinate,
+        전화번호 AS phoneNumber,
+        도로명주소 AS roadAddress
+    FROM 음식점
+        <trim prefix="WHERE" prefixOverrides="AND |OR">
+            <if test="searchKeyword.keyword != null and searchKeyword.keyword != ''">
+                AND 업소_명 LIKE '%'||#{searchKeyword.keyword}||'%'
+            </if>
+        </trim>
+    </select>
+    
+    <select id="getAllRestaurant" 
+            resultType="Restaurant">
+        SELECT
+        식품인증업소일련번호 AS foodCertificationSerialNumber,
+        업소_명 AS establishmentName,
+        자치구_코드 AS districtCode,
+        자치구_명 AS districtName,
+        업태_코드 AS businessTypeCode,
+        업태_명 AS businessTypeName,
+        지도_Y좌표 AS mapYCoordinate,
+        지도_X좌표 AS mapXCoordinate,
+        전화번호 AS phoneNumber,
+        도로명주소 AS roadAddress
+    FROM 음식점
+    </select>
+</mapper>

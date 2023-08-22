@@ -1,0 +1,75 @@
+<<<<<<< HEAD
+@charset "EUC-KR";
+
+#searchForm {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+=======
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+.sidebar {
+	font-family: 'Paytone One', sans-serif;
+}
+
+.searchBox {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	margin-left: 150px;
+	font-weight: bold;
+}
+
+.searchBox:hover > .searchInput {
+    width: 600px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 12px;
+}
+
+.searchInput {
+    border:none;
+    background: #00aaff;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+	border-radius: 40px;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+	}
+>>>>>>> 9e428dd708cae582e40b1040c67324596f4151a0
+}

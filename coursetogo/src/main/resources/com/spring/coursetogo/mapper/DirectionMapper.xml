@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.coursetogo.mapper.DirectionMapper">
+  <insert id="insertDirectionList" parameterType="java.util.List">
+
+    INSERT ALL
+    <foreach collection="list" item="directionDTO" separator=" ">
+      INTO Course_direction (course_id, direction_order, latitude, longitude) VALUES (#{directionDTO.courseId}, #{directionDTO.directionOrder}, #{directionDTO.latitude}, #{directionDTO.longitude})
+    </foreach>
+    SELECT 1 FROM DUAL
+
+</insert>
+
+
+    <select id="getDirectionsByCourseId" parameterType="int" resultType="DirectionDTO">
+        SELECT course_id, direction_order, latitude, longitude
+        FROM Course_direction
+        WHERE course_id = #{courseId}
+    </select>
+
+</mapper>
+ 
