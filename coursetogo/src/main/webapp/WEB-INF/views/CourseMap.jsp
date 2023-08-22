@@ -197,7 +197,7 @@ background-clip: content-box;
 		    <h3>작성된 리뷰</h3>
 		  </div>
 		  <%
-		  List<CourseReview> reviewList = (List<CourseReview>) request.getAttribute("CourseReview");
+		  List<CourseReviewDTO> reviewList = (List<CourseReviewDTO>) request.getAttribute("CourseReviewDTO");
 		  for (int i = 0; i < reviewList.size(); i++) {
 		    %>
 		    <div class="slidecontents">

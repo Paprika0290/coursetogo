@@ -10,8 +10,8 @@ public class HelloWorldController {
 
     @GetMapping(value = "/test/hello")
     @ResponseBody
-    public String helloRuckus(Model model) {
-        return "Hello Ruckus";
+    public String helloReact(Model model) {
+        return "Hello React";
     }
 
 }
