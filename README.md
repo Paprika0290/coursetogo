@@ -21,6 +21,7 @@
 
 #### - Database
 - Oracle DB/SQL
+- MongoDB
 
 #### - API
 - 네이버 로그인 API
