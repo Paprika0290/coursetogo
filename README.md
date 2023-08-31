@@ -17,7 +17,7 @@
 #### - Backend
 - Java 8
 - Spring Boot
-- Gradle
+- Maven -> Gradle
 - MyBatis
 
 #### - Database
