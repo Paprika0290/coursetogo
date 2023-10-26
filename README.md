@@ -12,7 +12,6 @@
 - HTML / CSS
 - Javascript
 - JSP
-- REACT (리액트를 사용하여 프론트 업데이트 예정입니다)
     
 #### - Backend
 - Java 8
